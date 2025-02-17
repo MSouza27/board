@@ -1,0 +1,44 @@
+fev. 17, 2025 3:59:45 PM liquibase.changelog
+INFO: Creating database history table with name: board.databasechangelog
+fev. 17, 2025 3:59:45 PM liquibase.changelog
+INFO: Reading from board.databasechangelog
+fev. 17, 2025 3:59:46 PM liquibase.lockservice
+INFO: Successfully acquired change log lock
+fev. 17, 2025 3:59:46 PM liquibase.command
+INFO: Using deploymentId: 9818786243
+fev. 17, 2025 3:59:46 PM liquibase.changelog
+INFO: Reading from board.databasechangelog
+Running Changeset: db/changelog/migrations/db.changelog-202502171348.sql::202502171348::magno
+fev. 17, 2025 3:59:46 PM liquibase.changelog
+INFO: Custom SQL executed
+fev. 17, 2025 3:59:46 PM liquibase.changelog
+INFO: ChangeSet db/changelog/migrations/db.changelog-202502171348.sql::202502171348::magno ran successfully in 11ms
+
+UPDATE SUMMARY
+Run:                          1
+Previously run:               0
+Filtered out:                 0
+-------------------------------
+Total change sets:            1
+
+fev. 17, 2025 3:59:46 PM liquibase.util
+INFO: UPDATE SUMMARY
+fev. 17, 2025 3:59:46 PM liquibase.util
+INFO: Run:                          1
+fev. 17, 2025 3:59:46 PM liquibase.util
+INFO: Previously run:               0
+fev. 17, 2025 3:59:46 PM liquibase.util
+INFO: Filtered out:                 0
+fev. 17, 2025 3:59:46 PM liquibase.util
+INFO: -------------------------------
+fev. 17, 2025 3:59:46 PM liquibase.util
+INFO: Total change sets:            1
+fev. 17, 2025 3:59:46 PM liquibase.util
+INFO: Update summary generated
+fev. 17, 2025 3:59:46 PM liquibase.command
+INFO: Update command completed successfully.
+Liquibase: Update has been successful. Rows affected: 1
+fev. 17, 2025 3:59:46 PM liquibase.lockservice
+INFO: Successfully released change log lock
+fev. 17, 2025 3:59:46 PM liquibase.command
+INFO: Command execution complete
