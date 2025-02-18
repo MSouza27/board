@@ -8,7 +8,7 @@ import java.util.Scanner;
 @AllArgsConstructor
 public class BoardMenu {
     private final BoardEntity entity;
-    private final Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in).useDelimiter("\n");
 
     public void execute() {
         System.out.printf("Bem vindo ao board %s, selecione a operação desejada", entity.getId());
