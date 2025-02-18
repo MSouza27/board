@@ -7,7 +7,10 @@ import lombok.RequiredArgsConstructor;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
+
+import static br.com.projetos.Board.persistence.entity.BoardColumnKindEnum.findByName;
 
 @RequiredArgsConstructor
 public class BoardColumnDAO {
@@ -15,7 +18,7 @@ public class BoardColumnDAO {
     private final Connection connection;
 
     public BoardColumnEntity insert (final BoardColumnEntity entity) throws SQLException{
-        var sql = "INSERT INTO BOARDS_COLUMNS (name, `order`, kind, board_ir) VALUES (?, ?, ?, ?);";
+        var sql = "INSERT INTO BOARDS_COLUMNS (name, `order`, kind, board_id) VALUES (?, ?, ?, ?);";
         try (var statement = connection.prepareStatement(sql)){
             var i = 1;
             statement.setString(i++, entity.getName());
@@ -31,6 +34,23 @@ public class BoardColumnDAO {
     }
 
     public List<BoardColumnEntity> findByBoardId(final Long id) throws SQLException {
-        return null;
+        List<BoardColumnEntity> entities = new ArrayList<>();
+        var sql = "SELECT id, name, `order`, kind FROM BOARDS_COLUMNS WHERE board_id = ? ORDER BY `order`";
+        try(var statement = connection.prepareStatement(sql)){
+            statement.setLong(1, id);
+            statement.executeQuery();
+            var resultSet = statement.getResultSet();
+            while (resultSet.next()){
+                var entity = new BoardColumnEntity();
+                entity.setId(resultSet.getLong("id"));
+                entity.setName(resultSet.getString("name"));
+                entity.setOrder(resultSet.getInt("order"));
+                entity.setKind(findByName(resultSet.getString("kind")));
+                entities.add(entity);
+            }
+
+            return entities;
+        }
+
     }
 }
