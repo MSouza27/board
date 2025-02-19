@@ -7,6 +7,8 @@ databaseChangeLog:
       file: db/changelog/migrations/db.changelog-202502171815.sql
   - include:
       file: db/changelog/migrations/db.changelog-202502171821.sql
+  - include:
+      file: db/changelog/migrations/db.changelog-202502191434.sql
 
 
 

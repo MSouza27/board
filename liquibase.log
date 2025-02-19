@@ -1,7 +1,7 @@
-fev. 18, 2025 3:43:26 PM liquibase.changelog
+fev. 19, 2025 2:30:57 AM liquibase.changelog
 INFO: Reading from board.databasechangelog
 Database is up to date, no changesets to execute
-fev. 18, 2025 3:43:26 PM liquibase.changelog
+fev. 19, 2025 2:30:57 AM liquibase.changelog
 INFO: Reading from board.databasechangelog
 
 UPDATE SUMMARY
@@ -11,21 +11,21 @@ Filtered out:                 0
 -------------------------------
 Total change sets:            4
 
-fev. 18, 2025 3:43:26 PM liquibase.util
+fev. 19, 2025 2:30:57 AM liquibase.util
 INFO: UPDATE SUMMARY
-fev. 18, 2025 3:43:26 PM liquibase.util
+fev. 19, 2025 2:30:57 AM liquibase.util
 INFO: Run:                          0
-fev. 18, 2025 3:43:26 PM liquibase.util
+fev. 19, 2025 2:30:57 AM liquibase.util
 INFO: Previously run:               4
-fev. 18, 2025 3:43:26 PM liquibase.util
+fev. 19, 2025 2:30:57 AM liquibase.util
 INFO: Filtered out:                 0
-fev. 18, 2025 3:43:26 PM liquibase.util
+fev. 19, 2025 2:30:57 AM liquibase.util
 INFO: -------------------------------
-fev. 18, 2025 3:43:26 PM liquibase.util
+fev. 19, 2025 2:30:57 AM liquibase.util
 INFO: Total change sets:            4
-fev. 18, 2025 3:43:26 PM liquibase.util
+fev. 19, 2025 2:30:57 AM liquibase.util
 INFO: Update summary generated
-fev. 18, 2025 3:43:26 PM liquibase.lockservice
+fev. 19, 2025 2:30:57 AM liquibase.lockservice
 INFO: Successfully released change log lock
-fev. 18, 2025 3:43:26 PM liquibase.command
+fev. 19, 2025 2:30:57 AM liquibase.command
 INFO: Command execution complete
